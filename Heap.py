@@ -31,7 +31,7 @@ class Heap:
         if i > 0 and self.store[i] > self.store[p]:
             c = self.store[p]
             self.store[p] = self.store[i]
-            self.store[i] = self.store[p]
+            self.store[i] = c
             self.add_heapify(p)
 
     def add(self, e:int):
